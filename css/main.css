@@ -1,0 +1,69 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 5vw;
+  text-align:center;
+  position: relative;
+  top: 50%;
+  font-weight: bold;
+  transform: translateY(-130%);
+}
+
+.link{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+  /* fix for IE7-9 */
+  background-color:#ffffff;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity:0;
+}
+
+div {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+
+.divD:hover{
+  text-decoration: underline;
+}
+
+.divK:hover{
+  text-decoration: underline;
+}
+
+.divmain { width: 100%}
+
+.divD {width: 50%;
+  background-image: url("../images/alaska.jpeg");
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
+  color: blue;
+}
+
+.divK {width: 50%;
+  background-image: url("../images/kriman.webp");
+  background-position: center;
+  position: relative;
+  font-family: sans-serif, Courier, monospace;
+}
+
+@media screen and (max-width:600px) {
+
+  p {
+    font-size: 5vh;
+    transform: rotate(90deg) translateY(0%) translateX(0%);
+
+}
