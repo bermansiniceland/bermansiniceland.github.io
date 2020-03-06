@@ -66,6 +66,7 @@ div {
   p {
     font-size: 5vh;
     transform: rotate(90deg) translateY(0%) translateX(0%);
-    color: black;
-
-}
+  }
+  .divK {
+    color: white
+  }
